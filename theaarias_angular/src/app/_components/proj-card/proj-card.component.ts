@@ -12,16 +12,19 @@ export class ProjCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  private imgPath = '../../../assets/images/';
+  //later, make all img titles same as text titles + images all jpg to easily implement img path
+
   public projData: any = [
     {
       title: 'theaarias.com',
-      description: "A second iteration of my personal website implementing the Angular framework. You're in it! Hi!!",
+      description: "Using Angular framework to create a 2nd iteration of my website. You're in it— Hi!",
       imgPath: '',
       tags: ['html','css','javascript','angular']
     },
     {
       title: 'ischool web app',
-      description: "Using C# and .NET to create a web application for RIT's school for information using the college's API, JSON, and jQuery plug-ins. Spring 2022",
+      description: "A web app for RIT's school for information using the college's API, JSON, and jQuery plug-ins. Spring 2022.",
       imgPath: '',
       tags: ['c#','.net','api','json','jquery']
     },
@@ -45,9 +48,15 @@ export class ProjCardComponent implements OnInit {
     },
     {
       title: 'myweather',
-      description: "A basic weather application utilizing the OpenWeather API (http://openweathermap.org)",
+      description: "A basic weather application utilizing the open source OpenWeather API.",
       imgPath: '',
       tags: ['html','css','api','javascript']
+    },
+    {
+      title: 'bon appetit',
+      description: "A website for my friend, the baker, who is starting a baking business.",
+      imgPath: this.imgPath + 'bon-appetit.jpg',
+      tags: ['html','css','javascript']
     }
   ];
 

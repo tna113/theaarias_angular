@@ -1,3 +1,5 @@
+@use "../../../assets/variables/variables" as v;
+
 div.proj {
     border: 1px solid black;
     padding: 15px;
@@ -9,6 +11,7 @@ div.proj.container {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    background-color: v.$cardBg;
 }
 
 div.proj.details {
