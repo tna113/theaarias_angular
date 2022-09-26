@@ -1,16 +1,17 @@
-<div class="proj container">
-    <div class="proj details">
-        <div class="details container">
-            <h2>proj title</h2>
-            <p>proj description</p>
+<div class="card container">
+    <div class="proj container" *ngFor="let proj of projData">
+        <div class="proj details">
+            <div class="details container">
+                <h2>{{ proj.title }}</h2>
+                <p>{{ proj.description }}</p>
+            </div>
+            <div>
+                <ul>
+                    <li *ngFor="let tag of proj.tags">{{ tag }}</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul>
-                <li>tag1</li>
-                <li>tag2</li>
-            </ul>
-        </div>
+    
+        <div class="proj pic"></div>
     </div>
-
-    <div class="proj pic"></div>
 </div>

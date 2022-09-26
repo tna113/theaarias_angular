@@ -4,7 +4,7 @@ div.proj {
 }
 
 div.proj.container {
-    height: 350px;
+    min-height: 300px;
     width: 650px;
     display: flex;
     flex-direction: row;
@@ -38,4 +38,10 @@ div.proj.pic:hover {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.card.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
