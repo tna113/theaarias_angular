@@ -1,0 +1,24 @@
+@use "../../../assets/variables/variables" as v;
+
+.slit.container {
+    // border: 1px solid red;
+}
+
+.slit > .slit {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: v.$cardBg;
+    border: 1px solid black;
+    height: 250px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slit > .stamps {
+    border: 1px solid red;
+    width: 10%;
+    height: 100%;
+    list-style: none;
+}

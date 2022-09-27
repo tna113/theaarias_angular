@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjCardComponent } from './_components/proj-card/proj-card.component';
+import { ProjPostcardComponent } from './_components/proj-postcard/proj-postcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjCardComponent
+    ProjCardComponent,
+    ProjPostcardComponent
   ],
   imports: [
     BrowserModule,
