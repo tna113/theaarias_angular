@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import projData from '../../lib/projData.json';
 
 @Component({
   selector: 'app-proj-card',
