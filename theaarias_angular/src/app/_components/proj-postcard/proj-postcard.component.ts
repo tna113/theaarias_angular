@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-proj-postcard',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./proj-postcard.component.scss']
 })
 export class ProjPostcardComponent implements OnInit {
+  
+  @Input() title: string = 'Default Title';  
+  @Input() description: string = 'Default description';
+  @Input() imgpath: string = '';
+  @Input() tags: string[] = [''];
 
   constructor() { }
 
